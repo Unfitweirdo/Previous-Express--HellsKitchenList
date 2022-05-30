@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Hells kitchen to do list</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Chef Gordon Ramsay's Hells Kitchen Challenge</h1>
+		</header>
+		<section>
+            <div>
+			<form action="/foodTasks"  id="chefTasksForm" method="POST">
+			<input id="tasksListBox" type="text" placeholder="Get me 5 ingredients and give me a 5 star michellin meal!" name="tasks">
+			<button type="submit" id="addFoodToList" name="button">Insert Ingredients</button>
+            </form>
+
+             <ul class="hellsFoodUl" id="hellsFoodList">
+
+            <% for(var i=0; i<foodTasks.length; i++) {%>
+                <% let lineThrough = foodTasks[i].completeFood ? 'line-through' : 'none' %>
+                <li>
+                  <span style='text-decoration: <%= lineThrough %>' ><%= foodTasks[i].foodTasks %></span>
+                  <span class="completeFood"> &#x2714 </span>
+                </li>
+              <% } %>
+
+        </ul>
+
+            </div>
+    
+    <div class="botdiv">
+        <p id="tasksLeft">Get all the ingredients and Put them in the pan!</p>
+        <button id="clearBasket">Clear Ingredients</button>
+    </div>
+</section>
+
+
+<script src="/main.js"></script>
+</body>
+</html>
+
+<!-- <ul class="hellsFoodUl" id="hellsFoodList">
+    <% for(var i=0; i<foodTasks.length; i++) {%>
+    <% let lineThrough = foodTasks[i].completedfood ? 'line-through' : 'none' %><li>
+    <li class="completeFood"></li>
+    
+    <li class="incompleteFood"></li>
+</ul> -->

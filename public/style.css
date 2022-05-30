@@ -1,0 +1,144 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background-image: url(https://www.caltimes.org/wp-content/uploads/2018/10/HellsKitchen1-900x675.jpg);
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0rem;
+  height: 5rem;
+  text-align: center;
+  background-image: url(https://cutewallpaper.org/21/fire-background-gif/Fire-Animation-Background-HD-Animated-Fire-Background-GIF.gif);
+  background-position: 0rem 9rem;
+  background-size: 122rem 15rem;
+  color: white;
+}
+
+section {
+  width: 47rem;
+  height: 47rem;
+  float: left;
+  margin-left: 27rem;
+  margin-top: 3rem;
+  border: 2px solid black;
+  background-image: url(https://www.goldderby.com/wp-content/uploads/2021/05/hells-kitchen-young-guns-cast-season-20.jpg?w=620&h=360&crop=1);
+  background-repeat: no-repeat;
+  background-size: 46.72rem 47rem;
+  background-position: 0rem 0rem;
+}
+
+input#tasksListBox {
+  height: 2.5rem;
+  width: 46.8rem;
+  font-size: 1.3em;
+  border-radius: 0.3rem;
+  float: left;
+  text-align: center;
+  margin-top: 0rem;
+}
+
+button#addFoodToList {
+  margin-left: 17rem;
+  font-size: 1.6em;
+  float: left;
+  border-radius: 0.3rem;
+}
+
+li#line {
+  color: white;
+  text-decoration: black;
+  font-size: 1.2em;
+  float: left;
+  width: 37rem;
+  height: auto;
+}
+
+p#tasksLeft {
+  color: red;
+  font-size: 1.65em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+div {
+  height: 36.74rem;
+  width: 47rem;
+  float: left;
+}
+
+li {
+  float: left;
+  height: 2rem;
+  font-weight: 600;
+  width: 42rem;
+  font-size: 2em;
+  color: white;
+}
+
+.botdiv {
+  float: left;
+  height: 10.2rem;
+  background-image: url(https://media1.giphy.com/media/3o6vY6Q50uPRwCrgLm/giphy.gif?cid=790b76114430599c2d35b25680496e4ab771adfb785c568d&rid=giphy.gif&ct=g);
+  background-size: 47rem 10rem;
+  background-repeat: no-repeat;
+  width: 46.8rem;
+}
+
+button#clearBasket {
+  margin-left: 18rem;
+  font-size: 1.6em;
+  border: 2px solid black;
+  border-radius: 0.3rem;
+}
+
+.completeFood {
+  color: darkgray;
+  float: left;
+  height: 2rem;
+  font-weight: 600;
+  width: 42rem;
+  font-size: 2em;
+}
+
+.incompleteFood {
+  float: left;
+  height: 2rem;
+  font-weight: 600;
+  width: 42rem;
+  font-size: 2em;
+  color: white;
+}
+
+ul#hellsFoodList {
+  height: 32.7rem;
+  width: 39.9rem;
+  float: left;
+  margin-left: 7rem;
+}
+
+li:nth-child(1) {
+  display: none;
+}
+
+li:nth-child(2) {
+  display: none;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

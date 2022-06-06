@@ -14,4 +14,4 @@
 
 ## Languages
 
-HTML, CSS, Javascript, Express, Node.js, Mongodb
+HTML, CSS, Javascript, Express, Node.js
